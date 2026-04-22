@@ -6,22 +6,26 @@ brew:
 
 brew-packages:
     brew install \
-        just \
-        fish \
-        zellij \
-        helix \
         bat \
         btop \
         eza \
         fastfetch \
         fd \
+        fish \
         fzf \
+        git-delta \
+        helix \
+        just \
         rg \
+        tailscale \
         tree \
-        uv
+        uv \
+        zellij \
 
+# Manually adjust config
 fish:
     # https://github.com/orgs/Homebrew/discussions/4412#discussioncomment-5595773
+    # https://docs.brew.sh/Installation#post-installation-steps
     echo 'eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> ~/.config/fish/config.fish
     # https://fishshell.com/docs/current/#default-shell
     echo $(which fish) | sudo tee -a /etc/shells
@@ -35,5 +39,6 @@ helix:
 
 just:
     # https://just.systems/man/en/shell-completion-scripts.html
-    just --completions fish > ~/.config/fish/completions/just.fish
+    # Is already built in
+    # just --completions fish > ~/.config/fish/completions/just.fish
 
