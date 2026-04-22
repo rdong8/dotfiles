@@ -17,7 +17,6 @@ brew-packages:
         helix \
         just \
         rg \
-        tailscale \
         tree \
         uv \
         zellij \
@@ -41,4 +40,3 @@ just:
     # https://just.systems/man/en/shell-completion-scripts.html
     # Is already built in
     # just --completions fish > ~/.config/fish/completions/just.fish
-
