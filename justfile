@@ -8,6 +8,7 @@ brew-packages:
     brew install \
         bat \
         btop \
+        dua \
         eza \
         fastfetch \
         fd \
