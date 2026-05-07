@@ -7,4 +7,4 @@ if status is-interactive
 end
 
 abbr --add ll --position command 'eza -lah'
-fish_add_path (brew --prefix)/opt/rustup/bin
+fish_add_path (brew --prefix rustup)/bin
