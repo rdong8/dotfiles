@@ -1,24 +1,7 @@
-brew-packages:
-    brew install \
-        bat \
-        btop \
-        dua \
-        eza \
-        fastfetch \
-        fd \
-        fzf \
-        git-delta \
-        helix \
-        hwloc \
-        juliaup \
-        just \
-        ripgrep \
-        rustup \
-        trash-cli \
-        tree \
-        uv \
-        zellij
+brew:
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 fish:
+    sudo dnf install fish
     which fish | sudo lchsh $USER
     
